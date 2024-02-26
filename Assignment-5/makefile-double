@@ -1,0 +1,9 @@
+program: GabatinoTaylor05.o getdouble.o
+	gcc GabatinoTaylor05.o getdouble.o -o program -lm
+
+GabatinoTaylor05.o: GabatinoTaylor05.c getdouble.h
+	gcc -c GabatinoTaylor05.c
+
+getdouble.o: getdouble.c getdouble.h
+	gcc -c getdouble.c
+
